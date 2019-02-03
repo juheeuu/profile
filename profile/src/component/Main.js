@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import profileImg from '../profileImg.png';
+import profileImg from '../static/img/profileImg.png';
 
 const style = {
     container: {
         flexDirection: 'column',
         textAlign: 'center',
+        marginTop: 60,
+        paddingBottom: 60,
     },
     mainText: {
         textAlign: 'center',
@@ -14,8 +16,6 @@ const style = {
     },
     subText: {
         color: 'white',
-    },
-    img: {
     },
 };
 
