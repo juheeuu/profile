@@ -18,12 +18,6 @@ const styles = {
   navbarContent: {
     justifyContent: 'flex-end',
   },
-  button: {
-    // borderRadius: 2,
-    // backgroundColor: '#e5dbff',
-    height: 50,
-  }
-
 };
 
 class Navbar extends Component {
@@ -34,9 +28,9 @@ class Navbar extends Component {
             <button>Juheeuu</button>
           </div>
           <div style={styles.navbarContent}>
-            <button styles={styles.button}>Intro</button>
-            <button styles={styles.button}>Skill</button>
-            <button styles={styles.button}>Portfolio</button>
+            <button>Intro</button>
+            <button>Skill</button>
+            <button>Portfolio</button>
           </div>
        </nav>
     );
