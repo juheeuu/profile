@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import profileImg from './profileImg.png';
-import { Navbar, NavItem, Nav } from 'react-bootstrap';
 import './App.css';
+import Navbar from './component/Navbar';
 
 const styles = {
   mainTitle: {
@@ -17,14 +17,19 @@ const styles = {
     flex: 1,
     flexDirection: 'row',
     backgroundColor: '#282c34',
+  },
+  container: {
+    backgroundColor: '#7048e8',
+    flexDirection: 'column',
+    justifyContent: 'center',
   }
 };
 
 class App extends Component {
   render() {
     return (
-       <div> 
-         <p> JuheeUU</p>
+       <div style={styles.container}> 
+         <Navbar />
        </div>
     );
   }
