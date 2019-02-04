@@ -5,7 +5,8 @@ const style = {
     container: {
         flexDirection: 'column',
         textAlign: 'center',
-        marginTop: 60,
+        // marginTop: 60,
+        paddingTop: 60,
         paddingBottom: 60,
     },
     mainText: {

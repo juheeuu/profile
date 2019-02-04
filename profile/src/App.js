@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Navbar from './component/Navbar';
 import Main from './component/Main';
+import Skill from './component/Skill';
 import Intro from './component/Intro';
 
 const styles = {
@@ -16,9 +17,10 @@ class App extends Component {
   render() {
     return (
        <div style={styles.container}> 
-         <Navbar />
+         {/* <Navbar /> */}
          <Main />
          <Intro />
+         <Skill />
        </div>
 
     );

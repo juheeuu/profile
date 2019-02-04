@@ -1,98 +1,103 @@
 import React, { Component } from 'react';
-import pythonImg from '../static/img/python.png';
-import javascriptImg from '../static/img/javascript.png';
-import cImg from '../static/img/c.png';
-import htmlImg from '../static/img/html.png';
 
 import '../static/css/intro.css';
 
 const style = {
     container: {
-        flexDirection: 'row',
+        flexDirection: 'column',
         textAlign: 'center',
-        backgroundColor: '#f1f3f5',
-        paddingTop: 10,
+        backgroundColor: '#9775fa',
+        paddingTop: 70,
         display: 'flex',
         justifyContent: 'center',
-        paddingBottom: 15,
+        paddingBottom: 85,
+    },
+    mainText: {
+        textAlign: 'center',
+        fontSize: 60,
+        color: 'white',
+        fontWeight: 'bold',
+    },
+    subText: {
+        marginTop: 20,
+        color: 'white',
+        letterSpacing: -0.3,
+    },
+    cardContainer:{
+        // display: 'flex',
+        // flexDirectio
     },
     card: {
         backgroundColor: 'white',
-        color: '#212529',
-        margin: 10,
-        fontSize: 40,
-        height: 350,
-        textAlign: 'center',
-    },
-    img: {
-        height: 180,
-        // width: 200,
+        borderRadius: 8,
+        marginTop: 32,
+        marginLeft: 300,
+        marginRight: 300,
+        marginBottom: 32,
+        shadowOffset: {width: 2, height: 2},
+        paddingBottom: 5,
     },
     cardTitle: {
-        fontSize: 25,
-        // marginTop: -20,
-        backgroundColor: '#9775fa',
-        borderRadius: 20,
+        fontSize: 32,
+        textAlign: 'left',
         marginLeft: 20,
-        marginRight: 20,
-        color: 'white',
-        paddingTop: 6,
-        paddingBottom: 8,
-        paddingLeft: 14,
-        paddingRight: 14,
+        paddingTop: 10,
+        letterSpacing: -1.5,
+        wordSpacing: -1,
+        color: '#495057',
     },
     cardText: {
-        fontSize: 18,
+        fontSize: 20,
+        marginTop: 3,
+        marginBottom: 3,
+        textAlign: 'left',
+        marginLeft: 120,
+        color: '#495057',
+    },
+    cardContent: {
         marginTop: 12,
+        paddingBottom: 5,
+        backgroundColor: '#e9ecef',
         marginLeft: 20,
         marginRight: 20,
-        paddingLeft: 14,
-        paddingRight: 14,
+        borderRadius: 8,
+        marginBottom: 20,
+        paddingTop: 5,
     },
-    javascriptImg: {
-        height: 120,
-        marginTop: 30,
-        marginBottom: 30,
-    },
-    cImg: {
-        height: 120,
-        marginTop: 30,
-        marginBottom: 30,
-    },
-    htmlImg: {
-        height: 120,
-        marginTop: 30,
-        marginBottom: 30,
-    }
 };
 
 class Intro extends Component {
   render() {
     return (
       <div className="introContainer" style={style.container}>
-        <div style={style.card} className="card"> 
-            <img src={pythonImg} style={style.img}></img>
-            <div style={style.cardTitle}> Python </div>
-            <div style={style.cardText}> Django </div>
-            <div style={style.cardText}> Python 2,3 </div>
+      <div style={style.mainText}> About Me!</div>
+      <div style={style.subText}>
+       KAIST 16 Major CS Minor ISysE
+      </div>
+      <div style={style.cardContainer}>
+        <div style={style.card}>
+            <div style={style.cardTitle}> <a href="https://cs.kaist.ac.kr/"> Computer Science  </a></div>
+            <ul style={style.cardContent}>
+                <li style={style.cardText}> System Programming </li>
+                <li style={style.cardText}> Computer Organization </li>
+                <li style={style.cardText}> Programming Language </li>
+                <li style={style.cardText}> Introduction to Computer Networks </li>
+                <li style={style.cardText}> Introduction to Database </li>
+                <li style={style.cardText}> Introduction to Algorithms </li>
+                <li style={style.cardText}> Data Structure </li>
+                <li style={style.cardText}> Discrete Mathematics </li>
+            </ul>
         </div>
-        <div style={style.card} className="card"> 
-            <img src={javascriptImg} style={style.javascriptImg}></img>
-            <div style={style.cardTitle}> Javascript </div>
-            <div style={style.cardText}> Node.js </div>
-            <div style={style.cardText}> React </div>
-            <div style={style.cardText}> React Native </div>
+        <div style={style.card}>
+            <div style={style.cardTitle}> <a href="https://ie.kaist.ac.kr/"> ISysE </a> </div>
+            <ul style={style.cardContent}>
+                <li style={style.cardText}> Manufacturing Process Innovation </li>
+                <li style={style.cardText}> OR II-Stochastic Models </li>
+                <li style={style.cardText}> Engineering Statistics </li>
+                <li style={style.cardText}> Information Technology for IE </li>
+            </ul>
         </div>
-        <div style={style.card} className="card"> 
-            <img src={cImg} style={style.cImg}></img>
-            <div style={style.cardTitle}> C/C++ </div>
-            <div style={style.cardText}> System programming </div>
-        </div>
-        <div style={style.card} className="card"> 
-            <img src={htmlImg} style={style.htmlImg}></img>
-            <div style={style.cardTitle}> Html/CSS </div>
-            <div style={style.cardText}> Bootstrap </div>
-        </div>
+      </div>
       </div>
     );
   }
